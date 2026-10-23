@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#f7f5ef">
+    <meta name="description" content="Tell us what your kind of escape looks like.">
+    <title>Plan a trip — Elsewhere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="container wrap nav navbar navbar-expand-lg">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">e</span> elsewhere</a>
+        <button class="menu-toggle navbar-toggler" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="nav-links collapse navbar-collapse" id="primaryNav">
+          <a href="index.html">Home</a>
+          <a href="destinations.html">Places</a>
+          <a href="experiences.html">Experiences</a>
+          <a href="stays.html">Stays</a>
+          <a href="about.html">Our story</a>
+          <a href="plan.html" class="nav-cta active" aria-current="page">Plan a trip</a>
+          <a href="booking.html" class="nav-cta">Book a stay ↗</a>
+        </nav>
+      </header>
+      <main>
+        <section class="page-hero wrap" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=85')">
+          <div class="page-hero-copy">
+            <div class="eyebrow">Your next story starts here</div>
+            <h1>Let’s find your elsewhere.</h1>
+            <p>Tell us a little about the trip you have in mind. We’ll help shape a journey that feels like you.</p>
+          </div>
+        </section>
+        <section class="section wrap split">
+          <div>
+            <div class="kicker">A few details to get us started</div>
+            <h2>What does your escape look like?</h2>
+            <p>Whether you have a place in mind or just know you need a break, share what matters most. We’ll help you find a good way in.</p>
+            <p>
+              <strong>Email</strong>
+              <br>
+              <a class="text-link" href="mailto:hello@elsewhere.travel">hello@elsewhere.travel</a>
+            </p>
+            <p>Thoughtful trips across India · Small groups · Your own pace</p>
+          </div>
+          <form class="form-card" id="trip-form">
+            <div class="form-grid">
+              <div>
+                <label for="name">Your name</label>
+                <input required id="name" placeholder="What should we call you?">
+              </div>
+              <div>
+                <label for="email">Email address</label>
+                <input required type="email" id="email" placeholder="you@example.com">
+              </div>
+              <div>
+                <label for="destination">Where are you dreaming of?</label>
+                <select id="destination">
+                  <option>Surprise me</option>
+                  <option>Rajasthan</option>
+                  <option>Himachal Pradesh</option>
+                  <option>Kerala</option>
+                  <option>Meghalaya</option>
+                  <option>Goa</option>
+                  <option>Ladakh</option>
+                </select>
+              </div>
+              <div>
+                <label for="month">When would you like to go?</label>
+                <input id="month" type="month">
+              </div>
+              <div class="full">
+                <label for="notes">Tell us a little more</label>
+                <textarea id="notes" placeholder="A slow week, a mountain trail, a family adventure…">
+                </textarea>
+              </div>
+              <button class="btn full" type="submit">Send a trip note ↗</button>
+            </div>
+          </form>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container wrap">
+          <div class="footer-top">
+            <div>
+              <a class="brand" href="index.html">
+                <span class="brand-mark" style="background:var(--lime);color:var(--green)">e</span> elsewhere</a>
+                <p class="footer-note">Go somewhere.<br>Come back with a story.</p>
+              </div>
+              <div class="footer-links">
+                <div class="footer-col">
+                  <strong>Explore</strong>
+                  <a href="destinations.html">Places</a>
+                  <a href="experiences.html">Experiences</a>
+                  <a href="stays.html">Stays</a>
+                </div>
+                <div class="footer-col">
+                  <strong>Say hello</strong>
+                  <a href="mailto:hello@elsewhere.travel">hello@elsewhere.travel</a>
+                  <a href="about.html">Our story</a>
+                  <a href="plan.html">Plan a trip ↗</a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <span>© 2026 Elsewhere Travel Co.</span>
+              <span>Made for the miles between here and there.</span>
+            </div>
+          </div>
+        </footer>
+        <div class="toast" role="status" aria-live="polite">
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+        <script src="site.js">
+        </script>
+      </body>
+    </html>
